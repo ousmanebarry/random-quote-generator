@@ -1,2 +1,2 @@
 # random-quote-generator
-Live demo : https://brave-carson-1edb81.netlify.app
+Live demo : https://random-quote-generator-web.netlify.app/
