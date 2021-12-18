@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="main.js" defer></script>
+		<title>Random Quote Generator</title>
+	</head>
+	<body onload="returnedContent">
+		<header>
+			<h1>Random Quote Generator</h1>
+		</header>
+		<section>
+			<div class="quote-area red" id="area-quote">
+				<h1></h1>
+			</div>
+			<div id="js-spinner" class="spinner hidden">
+				<div class="rect1"></div>
+				<div class="rect2"></div>
+				<div class="rect3"></div>
+				<div class="rect4"></div>
+				<div class="rect5"></div>
+			</div>
+		</section>
+		<section>
+			<div class="controls">
+				<button
+					title="Generate a new quote"
+					class="generate-quote grey"
+					id="quote-generator"
+					type="button"
+				>
+					Generate a new quote
+				</button>
+
+				<button
+					title="Tweet it"
+					class="tweet-quote"
+					id="quote-tweet"
+					type="button"
+				>
+					Tweet it!
+				</button>
+			</div>
+		</section>
+	</body>
+</html>
