@@ -7,6 +7,7 @@ const errorMsg = "Couldn't get quote, please try again!";
 let globalQuote = new String();
 
 async function fetchData() {
+	loadAnimation();
 	try {
 		const response = await fetch(url);
 		// let randomNum = Math.floor(Math.random() * 2);
@@ -19,6 +20,8 @@ async function fetchData() {
 		}
 	} catch (error) {
 		return error;
+	} finally {
+		closeAnimation();
 	}
 }
 
@@ -42,14 +45,21 @@ function redirectTweet() {
 			`https://twitter.com/intent/tweet?text=${globalQuote}`,
 			"_blank"
 		);
-		// loadAnimation();
 	}
 }
 
 function loadAnimation() {
 	generateBtn.removeAttribute("id");
 	generateBtn.removeEventListener("click", returnedContent);
+	tweetBtn.removeEventListener("click", redirectTweet);
 	spinner.classList.remove("hidden");
+}
+
+function closeAnimation() {
+	generateBtn.setAttribute("id", "quote-generator");
+	generateBtn.addEventListener("click", returnedContent);
+	tweetBtn.addEventListener("click", redirectTweet);
+	spinner.classList.add("hidden");
 }
 
 window.onload(returnedContent());
