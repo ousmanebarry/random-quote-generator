@@ -3,3 +3,6 @@
 Generate a random quote. Built using html, css and javascript.
 
 Live demo : https://random-quote-generator-web.netlify.app/
+
+![image](https://user-images.githubusercontent.com/79618101/146660418-c9b64cc8-4b9d-4dc5-bcea-7bd4482ea667.png)
+
