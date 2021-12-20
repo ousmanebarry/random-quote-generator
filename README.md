@@ -4,7 +4,7 @@ Generate a random quote. Built using html, css and javascript.
 
 Live demo : https://random-quote-generator-web.netlify.app/
 
-API credit : https://api.quotable.io/random
+API credit : https://quotable.io/
 
 Loading animation credit : https://tobiasahlin.com/spinkit/
 
