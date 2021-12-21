@@ -64,6 +64,8 @@ button {
   text-align: center;
 }
 
+/* This part of the code for the loading animation was not written by me */
+
 .spinner {
   margin: 10px auto;
   width: 50px;
