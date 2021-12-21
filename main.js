@@ -10,8 +10,6 @@ async function fetchData() {
 	loadAnimation();
 	try {
 		const response = await fetch(url);
-		// let randomNum = Math.floor(Math.random() * 2);
-		// randomNum === 0
 		if (response.ok) {
 			const data = await response.json();
 			return `${data.content} - ${data.author}`;
